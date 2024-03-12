@@ -26,7 +26,8 @@ gcc t3.c udp.c -o t3
 ## Game Mechanics
 
 - **Game Board:** A 3x3 grid where players make their moves.
-- **Turns:** Players take turns making moves, marking the board with 'x' or 'o.'
+- **Start Game:** Begin the game by either sending an invitation (`invite`) or accepting an invitation (`accept`) from another player.
+- **Turns:** Alternately take turns marking spaces on the board with your designated letter (`x` or `o`).
 - **Winning:** The first player to get three of their marks in a row (horizontally, vertically, or diagonally) wins.
 - **Draw:** If the board is filled with no winner, the game is a draw.
 
@@ -35,3 +36,4 @@ gcc t3.c udp.c -o t3
 - **Invite Mechanism:** The server waits for an invitation, while the client sends an invitation to the server.
 - **Role Identification:** The program determines whether it is the client or server based on command-line arguments.
 - **Turn Alternation:** Players alternate turns, and their moves are communicated over the network.
+  
