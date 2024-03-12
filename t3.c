@@ -1,5 +1,4 @@
 // Tic-tac-toe (T3) Network Game
-// Jason Losh
 
 //-----------------------------------------------------------------------------
 // Compile notes for C99 code
